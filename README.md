@@ -57,7 +57,7 @@ Each model was trained to classify inputs as either **real** or **fake**.
 
 ---
 
-## 🔍 Vision Transformer (ViT)
+## Vision Transformer (ViT)
 
 In the second notebook, we implemented:
 
