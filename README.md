@@ -52,11 +52,11 @@ The data was split into:
 In the first notebook, we implemented and compared the following CNN architectures:
 
 1. **MesoNet** – A deepfake-specific architecture designed for facial forensics. <br>
-   ![MesoNet Architecture](./README_Images/mesonet_architecture.png)
+   ![MesoNet Architecture](./README_Images/mesonet_architecture.PNG)
 2. **ResNet** – A classic residual network for deep learning stability.<br>
-   ![ResNet Architecture](./README_Images/resnet_architecture.png)
+   ![ResNet Architecture](./README_Images/resnet_architecture.PNG)
 3. **DenseNet** – Known for efficient parameter use and dense connections. <br>
-   ![DenseNet Architecture](./README_Images/densenet_architecture.png)
+   ![DenseNet Architecture](./README_Images/densenet_architecture.PNG)
 
 Each model was trained to classify inputs as either **real** or **fake**.
 
@@ -67,7 +67,7 @@ Each model was trained to classify inputs as either **real** or **fake**.
 In the second notebook, we implemented:
 
 - **ViT-B/16** from `torchvision.models` – A Transformer-based model that processes images as sequences of patches instead of convolutions. <br>
-  ![ViT Architecture](./README_Images/vit_architecture.png)
+  ![ViT Architecture](./README_Images/vit_architecture.PNG)
 
 This model captures **global context** better than CNNs, making it suitable for subtle manipulations in deepfakes.
 
@@ -95,10 +95,10 @@ This model captures **global context** better than CNNs, making it suitable for 
 | DenseNet | 67.99        | 1,996s           |
 | ViT-B/16 | 86.22        | 2:34:07          |
 
-![MesoNet Results](./README_Images/mesonet_results.png)
-![ResNet Results](./README_Images/resnet_results.png)
-![DenseNet Results](./README_Images/densenet_results.png)
-![ViT Results](./README_Images/vit_results.png)
+![MesoNet Results](./README_Images/mesonet_results.PNG)
+![ResNet Results](./README_Images/resnet_results.PNG)
+![DenseNet Results](./README_Images/densenet_results.PNG)
+![ViT Results](./README_Images/vit_results.PNG)
 
 ---
 
