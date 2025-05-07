@@ -27,7 +27,7 @@ We used a dataset comprising both **Real** and **Fake** face images divided into
 - Deepfake Classes: [Real/Fake]
 - Structure: Organized in folders per class — e.g., `Real/`, `Fake/`, etc.
 
-![ResNet Architecture](./README_Images/sample_images.png)
+![Sample_Images](./README_Images/sample_images.PNG)
 
 ---
 
