@@ -27,6 +27,8 @@ We used a dataset comprising both **Real** and **Fake** face images divided into
 - Deepfake Classes: [Real/Fake]
 - Structure: Organized in folders per class — e.g., `Real/`, `Fake/`, etc.
 
+![ResNet Architecture](./README_Images/sample_images.png)
+
 ---
 
 ## Data Preparation
@@ -49,9 +51,12 @@ The data was split into:
 
 In the first notebook, we implemented and compared the following CNN architectures:
 
-1. **MesoNet** – A deepfake-specific architecture designed for facial forensics.
-2. **ResNet** – A classic residual network for deep learning stability.
-3. **DenseNet** – Known for efficient parameter use and dense connections.
+1. **MesoNet** – A deepfake-specific architecture designed for facial forensics. <br>
+   ![MesoNet Architecture](./README_Images/mesonet_architecture.png)
+2. **ResNet** – A classic residual network for deep learning stability.<br>
+   ![ResNet Architecture](./README_Images/resnet_architecture.png)
+3. **DenseNet** – Known for efficient parameter use and dense connections. <br>
+   ![DenseNet Architecture](./README_Images/densenet_architecture.png)
 
 Each model was trained to classify inputs as either **real** or **fake**.
 
@@ -61,33 +66,39 @@ Each model was trained to classify inputs as either **real** or **fake**.
 
 In the second notebook, we implemented:
 
-- **ViT-B/16** from `torchvision.models` – A Transformer-based model that processes images as sequences of patches instead of convolutions.
-  
+- **ViT-B/16** from `torchvision.models` – A Transformer-based model that processes images as sequences of patches instead of convolutions. <br>
+  ![ViT Architecture](./README_Images/vit_architecture.png)
+
 This model captures **global context** better than CNNs, making it suitable for subtle manipulations in deepfakes.
 
 ---
 
 ## Hyperparameters
 
-| Parameter         | Value         |
-|------------------|---------------|
-| Epochs           | 5            |
-| Batch Size       | 32       |
-| Learning Rate    | 1e-4           |
-| Optimizer        | Adam          |
-| Loss Function    | binary_crossentropy |
-| Input Size       | 224x224       |
+| Parameter     | Value               |
+| ------------- | ------------------- |
+| Epochs        | 5                   |
+| Batch Size    | 32                  |
+| Learning Rate | 1e-4                |
+| Optimizer     | Adam                |
+| Loss Function | binary_crossentropy |
+| Input Size    | 224x224             |
 
 ---
 
 ## Results
 
-| Model         | Accuracy (%) | Computation Time |
-|---------------|--------------|------------------|
-| MesoNet       | 83.92        | 4,740s           | 
-| ResNet        | 86.97        | 7,838s           | 
-| DenseNet      | 67.99        | 1,996s           | 
-| ViT-B/16      | 86.22        | 2:34:07          | 
+| Model    | Accuracy (%) | Computation Time |
+| -------- | ------------ | ---------------- |
+| MesoNet  | 83.92        | 4,740s           |
+| ResNet   | 86.97        | 7,838s           |
+| DenseNet | 67.99        | 1,996s           |
+| ViT-B/16 | 86.22        | 2:34:07          |
+
+![MesoNet Results](./README_Images/mesonet_results.png)
+![ResNet Results](./README_Images/resnet_results.png)
+![DenseNet Results](./README_Images/densenet_results.png)
+![ViT Results](./README_Images/vit_results.png)
 
 ---
 
@@ -98,4 +109,3 @@ This model captures **global context** better than CNNs, making it suitable for 
 - ViT-B/16 also showed strong performance with very less training, indicating high potential for future use with extended training.
 
 ---
-
